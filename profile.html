@@ -6,36 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul {
-            list-style-type: none;
-            color: red;
-          }
-    
-        li {
-            float: left;
-            margin-right: 8px;
+        div {
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+            border-radius: 12px;
+            width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 12px;
+            background: linear-gradient(120deg,#39ef74,#4600f1 100%);
+            animation: rotateCard 7s infinite;
+
         }
-        </style>
+        img{
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+        }
+        @keyframes rotateCard{
+            50% {transform: rotate(360deg);}
+        }
+    </style>
 </head>
 <body>
-    <h3>Welcome to My Profile Page</h3>
-    <h2>John Watson</h2>
-    <img src="images/profile.png" alt="John" width="200px" height="120px">
-    <p>john.watson@example.com</p>
-    <br>
-    <b><a href="">Manage Addresses</a></b>
-    <br>
-    <b><a href="">Manage Orders</a></b>
-    <br>
-    <b><a href="">Manage Membership</a></b>
-    <br><br>
-    <button>Update Profile</button>   
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div>
+        <h3>Welcome to the profile page</h3>
+        <h2>John Watson</h2>
+        <img src="images/profile.png" alt="John" width="200px" height="120px">
+        <p>john.watson@example.com</p>
+        <br>
+        <b><a href="">Manage Addresses</a></b>
+        <br>
+        <b><a href="">Manage Orders</a></b>
+        <br>
+        <b><a href="">Manage Membership</a></b>
+        <br><br>
+        <button>Update Profile</button>
+    </div>
 </body>
 </html>
